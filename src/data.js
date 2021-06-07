@@ -33,6 +33,6 @@ export const projects = [
     info: "mini Social website for students parents made with NodeJs ,ExpressJs ,ejs ",
     img: "/Capture22.PNG",
     github: "https://github.com/obeim/social_2",
-    live: "pure-shore-62059.herokuapp.com/",
+    live: "https://pure-shore-62059.herokuapp.com/",
   },
 ];
