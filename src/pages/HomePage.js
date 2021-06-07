@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaLinkedin, FaGithub, FaTelegram } from "react-icons/fa";
 import { motion } from "framer-motion";
 const HomePage = () => {
+  useEffect(() => {
+    if (!document.querySelector("#footer").classList.contains("hidden")) {
+      document.querySelector("#footer").classList.add("hidden");
+    }
+  }, []);
   return (
     <div className='relative'>
       <img

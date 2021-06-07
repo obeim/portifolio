@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { skills } from "../data";
 const AboutPage = () => {
   const [scrollY, setScrolly] = useState(0);
@@ -8,6 +9,11 @@ const AboutPage = () => {
     setScrolly(window.scrollY);
   };
 
+  useEffect(() => {
+    if (document.querySelector("#footer").classList.contains("hidden")) {
+      document.querySelector("#footer").classList.remove("hidden");
+    }
+  }, []);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, false);
     return () => {
@@ -89,8 +95,27 @@ const AboutPage = () => {
               ))}
             </div>
           </div>
+          <div className='flex justify-center w-full mt-20'>
+            <div className=' '>
+              <h1 className=' text-3xl text-center mb-20'>
+                How To Reach <span className='text-blue-500'>Me</span>
+              </h1>
+
+              <div>
+                <h1 className='border md:text-3xl text-base p-3'>
+                  <AiOutlineMail className=' inline-block' /> Email :
+                  obeimustafa@gmail.com
+                </h1>
+                <h1 className='border md:text-3xl text-xl p-3'>
+                  <AiOutlinePhone className=' inline-block' /> Phone :
+                  +249126038115
+                </h1>
+              </div>
+            </div>
+          </div>
         </motion.div>
-        <div className='h-96'></div>
+
+        <div className='h-52'></div>
       </div>
     </div>
   );

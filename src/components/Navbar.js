@@ -21,12 +21,6 @@ const Navbar = () => {
             Projects
           </Link>
         </motion.h1>{" "}
-        <motion.h1 whileHover={{ scale: 1.2, color: "#3b92f6" }}>
-          {" "}
-          <Link id='RouterNavLink' to='/contact'>
-            Contact{" "}
-          </Link>
-        </motion.h1>
       </div>
     </div>
   );

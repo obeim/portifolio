@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { CgMediaLive } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
 import { projects } from "../data";
 const ProjectsPage = () => {
+  useEffect(() => {
+    if (document.querySelector("#footer").classList.contains("hidden")) {
+      document.querySelector("#footer").classList.remove("hidden");
+    }
+  }, []);
   return (
     <div style={{ backgroundColor: "#111111" }} className='text-white'>
       <div className='w-full h-28 container'></div>
@@ -24,19 +29,16 @@ const ProjectsPage = () => {
               key={index}
               className='border-8 shadow-lg border-gray-900 relative lg:w-full md:w-11/12 w-8/12 mx-auto'
             >
-              <div className='absolute  top-0  h-full bg-black w-full md:opacity-0 md:hover:opacity-90 transition duration-500 opacity-70  p-10'>
+              <div className='absolute  top-0  h-full bg-black w-full md:opacity-0 md:hover:opacity-90 transition duration-500 opacity-70 md:text-base text-sm  md:p-10 p-3'>
                 {" "}
                 {project.info}
-                <div className='flex justify-center items-center gap-10 mt-10'>
+                <div className='flex justify-center md:flex-row  flex-col items-center md:gap-10 gap-2 md:mt-10 mt-5'>
                   <a href={project.live} className='border px-4 py-2'>
                     <CgMediaLive className='inline-block' /> Live
                   </a>
-                  <motion.a
-                    whileHover={{ color: "blue", scale: 1.1 }}
-                    href={project.github}
-                  >
-                    <FaGithub className='inline-block' /> github
-                  </motion.a>
+                  <a href={project.github} className='md:border-0 border p-2'>
+                    <FaGithub className='inline-block ' /> github
+                  </a>
                 </div>
               </div>
               <img
@@ -50,7 +52,7 @@ const ProjectsPage = () => {
           ))}
         </div>
       </div>
-      <div className='h-96'></div>
+      <div className='h-52'></div>
     </div>
   );
 };
