@@ -106,7 +106,7 @@ const AboutPage = () => {
                   <AiOutlineMail className=' inline-block' /> Email :
                   obeimustafa@gmail.com
                 </h1>
-                <h1 className='border md:text-3xl text-xl p-3'>
+                <h1 className='border md:text-3xl text-base p-3'>
                   <AiOutlinePhone className=' inline-block' /> Phone :
                   +249126038115
                 </h1>
