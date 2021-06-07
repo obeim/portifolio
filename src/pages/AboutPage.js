@@ -49,7 +49,7 @@ const AboutPage = () => {
             <div className='text-xl w-full  md:text-left text-center mx-auto'>
               <h1>
                 <h1 className='text-blue-500 text-3xl '>BIO</h1>
-                <p className='my-8 w-10/12 md:mx-0 mx-auto'>
+                <p className='my-8 w-10/12 md:mx-0 mx-auto tracking-wider 	'>
                   {" "}
                   My name is Obei Mustafa and I am a Freelancer Junior Web
                   Developer , I am an accomplished coder and programmer, and I
