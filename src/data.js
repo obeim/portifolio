@@ -6,10 +6,11 @@ export const skills = [
   "Tailwind CSS",
   "React Js",
   "Redux",
+  "Framer Motion"
   "Next Js ",
   "Node Js",
   "Express Js",
-  "MonogDB",
+  "MonogDB"
   "Visual Studio Code",
   "Adobe XD",
 ];
