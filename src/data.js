@@ -17,10 +17,11 @@ export const skills = [
 export const projects = [
   {
     name: "Yodagram",
-    info: "Yodagram is a Fullstack app like instgram made with MERN Stack as paractice ",
+    info:
+      "Yodagram is a Fullstack app like instgram made with MERN Stack as paractice ",
     img: "/Screenshot-2021-06-02-17-52-38.png",
     github: "https://github.com/obeim/Yodagram",
-    live: "https://yodagram.herokuapp.com/",
+    live: "",
   },
   {
     name: "theBreakingBad",
@@ -31,7 +32,8 @@ export const projects = [
   },
   {
     name: "Social WebSite For Parents",
-    info: "mini Social website for students parents made with NodeJs ,ExpressJs ,ejs ",
+    info:
+      "mini Social website for students parents made with NodeJs ,ExpressJs ,ejs ",
     img: "/Capture22.PNG",
     github: "https://github.com/obeim/social_2",
     live: "https://pure-shore-62059.herokuapp.com/",
