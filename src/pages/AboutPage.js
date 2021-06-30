@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { skills } from "../data";
 const AboutPage = () => {
-  const [scrollY, setScrolly] = useState(0);
+  const [scrollY, setScrolly] = useState(window.scrollY);
 
   const handleScroll = () => {
     setScrolly(window.scrollY);
@@ -43,7 +43,6 @@ const AboutPage = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          id='section-1'
           className='flex md:flex-row flex-col items-center  gap-20 mt-10 justify-center '
         >
           <img
@@ -71,10 +70,9 @@ const AboutPage = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
-            opacity: scrollY > (window.innerWidth > 1023 ? 240 : 550) ? 1 : 0,
+            opacity: scrollY > 300 ? 1 : 0,
           }}
-          transition={{ duration: 1.4 }}
-          id='skills-section'
+          transition={{ duration: 1.3 }}
           className='md:mt-40  mt-32  '
         >
           <h1 className='mx-auto text-center md:text-4xl text-3xl'>
