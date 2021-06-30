@@ -21,7 +21,7 @@ export const projects = [
       "Yodagram is a Fullstack app like instgram made with MERN Stack as paractice ",
     img: "/Screenshot-2021-06-02-17-52-38.png",
     github: "https://github.com/obeim/Yodagram",
-    live: "",
+    live: "https://yodagram.herokuapp.com",
   },
   {
     name: "theBreakingBad",
